@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Ganhua Lu",
+    "section": "",
+    "text": "Hello! My name is Ganhua Lu, and I am a Data Scientist enthusiastic about data analytics, machine learning, AI, and creating impactful data visualizations.\nI’m currently a Data Scientist on the Data & Analytics Team for the County Health Rankings & Roadmaps at University of Wisconsin Population Health Institute.\nI have M.S. in Data Science from Marquette University and Ph.D. in Mechanical Engineering from the University of Wisconsin-Milwaukee.\nYou can find more information about my academic publications on the Publications page and my contact information."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Information",
+    "section": "",
+    "text": "Ganhua Lu, PhD\nganhulu@gmail.com\n\nThe best way to contact me is at the email address above."
+  }
+]

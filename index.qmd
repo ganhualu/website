@@ -1,0 +1,27 @@
+---
+title: "Ganhua Lu"
+image: img/profile.jpg
+page-layout: full
+about:
+  template: trestles
+  image-width: 20em
+  image-shape: round
+  links:
+    - icon: github
+      text: Github
+      href: https://github.com/ganhualu
+    - icon: email
+      text: Email
+      href: mailto:ganhualu@gmail.com
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/ganhua-lu-a0788338/
+---
+
+Hello! My name is Ganhua Lu, and I am a Data Scientist enthusiastic about data analytics, machine learning, AI, and creating impactful data visualizations.
+
+I am currently a Data Scientist on the Data & Analytics Team for the [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/) at [University of Wisconsin Population Health Institute](https://uwphi.pophealth.wisc.edu).
+
+I have an M.S. in Data Science from [Marquette University](https://www.marquette.edu/) and Ph.D. in Mechanical Engineering from the [University of Wisconsin-Milwaukee](https://uwm.edu/). 
+
+You can see my posts on data analytics using R, SAS, and Python on [Posts](posts.qmd) page and find more information about my academic publications on the [Publications](publications.qmd) page and my [contact information](contact.qmd).

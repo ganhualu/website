@@ -1,0 +1,23 @@
+[
+  {
+    "listing": "/posts.html",
+    "items": [
+      "/posts/2024-03-18-reading-fixed-width-files-in-sas-r-and-python/read_fixed_width_file.html",
+      "/posts/2025-01-03-pandas-equivalent-to-r-tidyverse-mutate-across/index.html",
+      "/posts/2024-10-26-understanding-icd-10-codes-and-the-113-causes-of-death-in-cdc-wonder/index.html",
+      "/posts/2024-08-27-using-the-substr-function-to-create-new-variables-in-sas-a-lengthy-matter/index.html",
+      "/posts/2024-01-14-create-a-crosswalk-between-2022-census-tracts-and-2020-counties-in-connecticut-by-spatial-join/index.html",
+      "/posts/2023-06-09-run-r-in-sas/index.html",
+      "/posts/2024-03-18-reading-fixed-width-files-in-sas-r-and-python/index.html",
+      "/posts/2024-03-15-parallel-computing-in-r/index.html",
+      "/posts/2023-06-07-subgroup-population-by-age-category-from-census-population-estimates/index.html",
+      "/posts/2023-05-15-calculate-county-level-rural-population-rate-from-census-blocks-data-using-python/index.html",
+      "/posts/2022-10-09-pull-data-from-epa-databases-through-its-data-service-api/index.html",
+      "/posts/2022-08-18-introduction-to-r/index.html",
+      "/posts/2022-08-03-proc-sql/index.html",
+      "/posts/2022-07-21-sas-macro-2/index.html",
+      "/posts/2022-07-07-sas-macor-1/index.html",
+      "/posts/2022-06-23-ways-to-run-sas/index.html"
+    ]
+  }
+]

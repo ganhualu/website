@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="">
+<meta name="dcterms.date" content="2023-06-09">
+
+<title>Ganhua Lu - Subgroup Population by Age Category from Census Population Estimates</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script src="../../site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="../../site_libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Ganhua Lu</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../posts.html" rel="" target="">
+ <span class="menu-text">Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../publications.html" rel="" target="">
+ <span class="menu-text">Pubs</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../contact.html" rel="" target="">
+ <span class="menu-text">Contact</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resume.html" rel="" target="">
+ <span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Subgroup Population by Age Category from Census Population Estimates</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">R</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 9, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction-ypll" id="toc-introduction-ypll" class="nav-link active" data-scroll-target="#introduction-ypll">Introduction: YPLL</a></li>
+  <li><a href="#what-population-data-is-needed-for-subgroup-ypll-calculation" id="toc-what-population-data-is-needed-for-subgroup-ypll-calculation" class="nav-link" data-scroll-target="#what-population-data-is-needed-for-subgroup-ypll-calculation">What population data is needed for subgroup YPLL calculation</a>
+  <ul class="collapse">
+  <li><a href="#age-categories-age_cat" id="toc-age-categories-age_cat" class="nav-link" data-scroll-target="#age-categories-age_cat">Age categories (age_cat)</a></li>
+  <li><a href="#raceethnicity-subgroups" id="toc-raceethnicity-subgroups" class="nav-link" data-scroll-target="#raceethnicity-subgroups">Race/ethnicity subgroups</a></li>
+  </ul></li>
+  <li><a href="#census-population-estimates" id="toc-census-population-estimates" class="nav-link" data-scroll-target="#census-population-estimates">Census population estimates</a>
+  <ul class="collapse">
+  <li><a href="#get-data-directly-from-census-pft-website" id="toc-get-data-directly-from-census-pft-website" class="nav-link" data-scroll-target="#get-data-directly-from-census-pft-website">Get data directly from Census pft website</a></li>
+  <li><a href="#overview-of-the-raw-data" id="toc-overview-of-the-raw-data" class="nav-link" data-scroll-target="#overview-of-the-raw-data">Overview of the raw data</a></li>
+  </ul></li>
+  <li><a href="#get-subgroup-population-by-age-category" id="toc-get-subgroup-population-by-age-category" class="nav-link" data-scroll-target="#get-subgroup-population-by-age-category">Get subgroup population by age category</a>
+  <ul class="collapse">
+  <li><a href="#subset-the-raw-data-keep-only-needed-columns" id="toc-subset-the-raw-data-keep-only-needed-columns" class="nav-link" data-scroll-target="#subset-the-raw-data-keep-only-needed-columns">subset the raw data, keep only needed columns</a></li>
+  <li><a href="#county-population-by-age-categories-and-raceethnicity-subgroups" id="toc-county-population-by-age-categories-and-raceethnicity-subgroups" class="nav-link" data-scroll-target="#county-population-by-age-categories-and-raceethnicity-subgroups">County population by age categories and race/ethnicity subgroups</a>
+  <ul class="collapse">
+  <li><a href="#age_cat-2-7" id="toc-age_cat-2-7" class="nav-link" data-scroll-target="#age_cat-2-7">age_cat = 2-7</a></li>
+  <li><a href="#age_cat-0-infant-population" id="toc-age_cat-0-infant-population" class="nav-link" data-scroll-target="#age_cat-0-infant-population">age_cat = 0: infant population</a></li>
+  <li><a href="#age_cat-1-1-14-year" id="toc-age_cat-1-1-14-year" class="nav-link" data-scroll-target="#age_cat-1-1-14-year">age_cat = 1: 1-14 year</a></li>
+  <li><a href="#all-age-categories" id="toc-all-age-categories" class="nav-link" data-scroll-target="#all-age-categories">all age categories</a></li>
+  <li><a href="#pivot-tabel-longer-so-that-we-have-one-column-of-subgroup-codes-and-one-column-for-population" id="toc-pivot-tabel-longer-so-that-we-have-one-column-of-subgroup-codes-and-one-column-for-population" class="nav-link" data-scroll-target="#pivot-tabel-longer-so-that-we-have-one-column-of-subgroup-codes-and-one-column-for-population">Pivot tabel longer so that we have one column of subgroup codes and one column for population</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="introduction-ypll" class="level1">
+<h1>Introduction: YPLL</h1>
+<p>Years of Potential Life Lost (YPLL) is widely used for measuring the rate and distribution of premature mortality. <a href="https://www.countyhealthrankings.org/explore-health-rankings/county-health-rankings-model/health-outcomes/length-of-life/premature-death?year=2023">CHRR</a> uses YPLL as one of health outcomes to measure county health status.YPLL is a rate and age-adjusted, and it can be calculated as</p>
+<p><span class="math display">\[
+\boxed{ {YPLL \: Rate }_{{age-adj}}=\sum_{i=0}^{75} \frac {(75-i)\cdot d_i\cdot  {w_i}}{p_i} \cdot 100,000}
+\]</span> where</p>
+<ul>
+<li><p><span class="math inline">\(75\)</span> is the upper age limit established,</p></li>
+<li><p><span class="math inline">\(i\)</span> is the midpoint of the grouped year of age at death (e.g., 59.5 for age group 55-64),</p></li>
+<li><p><span class="math inline">\(d_i\)</span> is the number of deaths at age <span class="math inline">\(i\)</span>.</p></li>
+<li><p><span class="math inline">\(p_i\)</span> is the population for age group i.</p></li>
+<li><p><span class="math inline">\(\sum p_i\)</span> is the population between the lower and upper age limits (e.g., 75 as the upper age limit and 0 as the lower age limit)</p></li>
+<li><p><span class="math inline">\({w_i}\)</span> is the weight of age adjustment for group i on the basis of the US standard year 2000 population. <span class="math inline">\(\sum w_i = 1\)</span></p></li>
+</ul>
+<p>The population data is needed in the denominator of the above formula, and <span class="math inline">\(p_i\)</span> has been based on the single-year-of-age, bridged-race, county-level population estimates released by the National Center for Health Statistics (NCHS). The series of bridged-race population estimates is a collaborative work between NCHS and U. S. Census Bureau. However, NCHS discontinued the production of single-year-of-age, bridged-race population estimates after releasing 2020 data. In their <a href="https://www.cdc.gov/nchs/data/nvss/bridged_race/Documentation-Bridged-PostcenV2020.pdf">documentation</a>, it is mentioned that “The U.S. Census Bureau annually releases unbridged population estimates for five-year age groups and race at the county level.” This post uses R to explore the feasibility of getting population data needed for subgroup YPLL calculations from Census population estimates.</p>
+</section>
+<section id="what-population-data-is-needed-for-subgroup-ypll-calculation" class="level1">
+<h1>What population data is needed for subgroup YPLL calculation</h1>
+<p>We want to have subgroup population data by age categories at county level.</p>
+<section id="age-categories-age_cat" class="level2">
+<h2 class="anchored" data-anchor-id="age-categories-age_cat">Age categories (age_cat)</h2>
+<p>From the lower age limit 0 to the upper age limit 75, the population is usually grouped into 8 age categories (coded from 0 to 7):</p>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<caption>Age categories</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Age</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">age_cat</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left; width: 12em;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 12em;">1-14</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 12em;">15-24</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 12em;">25-34</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 12em;">35-44</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 12em;">45-54</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left; width: 12em;">55-64</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr class="even">
+<td style="text-align: left; width: 12em;">65-74</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+<section id="raceethnicity-subgroups" class="level2">
+<h2 class="anchored" data-anchor-id="raceethnicity-subgroups">Race/ethnicity subgroups</h2>
+<p>Five race/ethnicity subgroups have been used in YPLL calculations at CHRR.</p>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<caption>Subgroups</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">Subgroup</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">non-Hispanic, White alone</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">non-Hispanic, Black alone</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">non-Hispanic, AIAN (American Indian or Alaska Native) alone</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">non-Hispanic, Asian alone</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Hispanic</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+<p><strong>Note</strong>: Bridged and un-bridged race populations are not identical. By bridging, those in the group “two or more races” are assigned using probabilistic factors and included in White, Black, AIAN, or Asian.</p>
+</section>
+</section>
+<section id="census-population-estimates" class="level1">
+<h1>Census population estimates</h1>
+<p>Let’s use 2020 Census county-level population estimates as an example and see how the data look like. Here is the <a href="https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/">link</a> and the file name is <code>CC-EST2020-ALLDATA.csv</code>.</p>
+<section id="get-data-directly-from-census-pft-website" class="level2">
+<h2 class="anchored" data-anchor-id="get-data-directly-from-census-pft-website">Get data directly from Census pft website</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>cc_est2020_all <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"https://www2.census.gov/programs-surveys/popest/datasets/2010-2020/counties/asrh/CC-EST2020-ALLDATA.csv"</span>) <span class="sc">|&gt;</span>  </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  janitor<span class="sc">::</span><span class="fu">clean_names</span>() <span class="sc">|&gt;</span>  </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">glimpse</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 776,321
+Columns: 80
+$ sumlev       &lt;chr&gt; "050", "050", "050", "050", "050", "050", "050", "050", "…
+$ state        &lt;chr&gt; "01", "01", "01", "01", "01", "01", "01", "01", "01", "01…
+$ county       &lt;chr&gt; "001", "001", "001", "001", "001", "001", "001", "001", "…
+$ stname       &lt;chr&gt; "Alabama", "Alabama", "Alabama", "Alabama", "Alabama", "A…
+$ ctyname      &lt;chr&gt; "Autauga County", "Autauga County", "Autauga County", "Au…
+$ year         &lt;dbl&gt; 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+$ agegrp       &lt;dbl&gt; 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16,…
+$ tot_pop      &lt;dbl&gt; 54571, 3579, 3991, 4290, 4290, 3080, 3157, 3330, 4157, 40…
+$ tot_male     &lt;dbl&gt; 26569, 1866, 2001, 2171, 2213, 1539, 1543, 1594, 2004, 19…
+$ tot_female   &lt;dbl&gt; 28002, 1713, 1990, 2119, 2077, 1541, 1614, 1736, 2153, 21…
+$ wa_male      &lt;dbl&gt; 21295, 1411, 1521, 1658, 1628, 1201, 1234, 1289, 1596, 16…
+$ wa_female    &lt;dbl&gt; 22002, 1316, 1526, 1620, 1585, 1184, 1223, 1298, 1645, 16…
+$ ba_male      &lt;dbl&gt; 4559, 362, 399, 431, 502, 293, 277, 276, 338, 303, 315, 3…
+$ ba_female    &lt;dbl&gt; 5130, 317, 374, 406, 424, 312, 350, 378, 432, 384, 353, 3…
+$ ia_male      &lt;dbl&gt; 119, 5, 14, 15, 12, 6, 1, 1, 11, 9, 14, 11, 7, 6, 3, 4, 0…
+$ ia_female    &lt;dbl&gt; 139, 3, 8, 12, 7, 9, 3, 10, 9, 14, 11, 12, 9, 13, 8, 5, 6…
+$ aa_male      &lt;dbl&gt; 200, 13, 17, 23, 25, 8, 7, 12, 30, 16, 19, 10, 6, 7, 4, 2…
+$ aa_female    &lt;dbl&gt; 284, 15, 21, 18, 14, 7, 23, 25, 30, 36, 27, 17, 9, 13, 9,…
+$ na_male      &lt;dbl&gt; 29, 1, 1, 4, 4, 3, 6, 3, 2, 1, 3, 0, 1, 0, 0, 0, 0, 0, 0,…
+$ na_female    &lt;dbl&gt; 18, 0, 3, 1, 2, 2, 3, 1, 3, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0,…
+$ tom_male     &lt;dbl&gt; 367, 74, 49, 40, 42, 28, 18, 13, 27, 20, 13, 14, 8, 9, 6,…
+$ tom_female   &lt;dbl&gt; 429, 62, 58, 62, 45, 27, 12, 24, 34, 18, 23, 20, 7, 14, 1…
+$ wac_male     &lt;dbl&gt; 21633, 1479, 1570, 1694, 1664, 1228, 1250, 1301, 1621, 16…
+$ wac_female   &lt;dbl&gt; 22391, 1368, 1583, 1681, 1624, 1206, 1235, 1319, 1675, 16…
+$ bac_male     &lt;dbl&gt; 4704, 405, 425, 453, 525, 301, 280, 279, 342, 307, 317, 3…
+$ bac_female   &lt;dbl&gt; 5306, 362, 403, 436, 444, 324, 351, 386, 446, 388, 359, 3…
+$ iac_male     &lt;dbl&gt; 277, 23, 27, 29, 23, 17, 14, 6, 29, 22, 22, 24, 11, 14, 7…
+$ iac_female   &lt;dbl&gt; 314, 18, 19, 27, 20, 24, 12, 15, 22, 27, 25, 28, 14, 26, …
+$ aac_male     &lt;dbl&gt; 300, 34, 32, 32, 39, 16, 12, 18, 38, 22, 22, 11, 8, 8, 5,…
+$ aac_female   &lt;dbl&gt; 409, 28, 42, 37, 31, 12, 25, 40, 44, 41, 32, 20, 11, 14, …
+$ nac_male     &lt;dbl&gt; 42, 3, 3, 4, 6, 5, 6, 3, 2, 3, 3, 0, 3, 0, 1, 0, 0, 0, 0,…
+$ nac_female   &lt;dbl&gt; 37, 1, 4, 5, 5, 3, 3, 2, 3, 4, 5, 0, 0, 2, 0, 0, 0, 0, 0,…
+$ nh_male      &lt;dbl&gt; 25875, 1778, 1933, 2105, 2153, 1474, 1477, 1533, 1948, 19…
+$ nh_female    &lt;dbl&gt; 27386, 1651, 1916, 2055, 2026, 1499, 1570, 1674, 2108, 20…
+$ nhwa_male    &lt;dbl&gt; 20709, 1337, 1460, 1613, 1580, 1141, 1180, 1234, 1547, 15…
+$ nhwa_female  &lt;dbl&gt; 21485, 1260, 1465, 1570, 1543, 1151, 1184, 1245, 1610, 16…
+$ nhba_male    &lt;dbl&gt; 4512, 356, 398, 421, 495, 291, 272, 273, 336, 301, 312, 3…
+$ nhba_female  &lt;dbl&gt; 5091, 313, 372, 403, 420, 308, 347, 373, 429, 383, 348, 3…
+$ nhia_male    &lt;dbl&gt; 103, 2, 12, 12, 12, 6, 1, 1, 8, 8, 11, 10, 7, 6, 3, 4, 0,…
+$ nhia_female  &lt;dbl&gt; 115, 2, 2, 9, 5, 7, 3, 8, 7, 11, 11, 11, 9, 12, 8, 4, 6, …
+$ nhaa_male    &lt;dbl&gt; 194, 13, 17, 22, 23, 8, 5, 12, 30, 16, 18, 10, 6, 7, 4, 2…
+$ nhaa_female  &lt;dbl&gt; 280, 15, 21, 18, 14, 6, 23, 25, 29, 36, 26, 17, 9, 13, 8,…
+$ nhna_male    &lt;dbl&gt; 13, 0, 0, 3, 1, 2, 1, 1, 1, 0, 3, 0, 1, 0, 0, 0, 0, 0, 0,…
+$ nhna_female  &lt;dbl&gt; 9, 0, 3, 0, 1, 1, 1, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, …
+$ nhtom_male   &lt;dbl&gt; 344, 70, 46, 34, 42, 26, 18, 12, 26, 18, 11, 14, 7, 9, 5,…
+$ nhtom_female &lt;dbl&gt; 406, 61, 53, 55, 43, 26, 12, 23, 32, 18, 22, 18, 6, 14, 1…
+$ nhwac_male   &lt;dbl&gt; 21026, 1402, 1506, 1643, 1616, 1166, 1196, 1245, 1571, 15…
+$ nhwac_female &lt;dbl&gt; 21853, 1312, 1517, 1624, 1580, 1172, 1196, 1266, 1638, 16…
+$ nhbac_male   &lt;dbl&gt; 4647, 396, 423, 440, 518, 299, 275, 275, 340, 304, 314, 3…
+$ nhbac_female &lt;dbl&gt; 5258, 357, 400, 429, 439, 320, 348, 380, 442, 387, 354, 3…
+$ nhiac_male   &lt;dbl&gt; 251, 19, 25, 24, 23, 15, 14, 6, 25, 20, 17, 23, 11, 14, 6…
+$ nhiac_female &lt;dbl&gt; 282, 17, 12, 22, 18, 21, 12, 13, 20, 24, 24, 25, 13, 25, …
+$ nhaac_male   &lt;dbl&gt; 291, 34, 30, 30, 37, 16, 10, 18, 38, 22, 21, 11, 8, 8, 5,…
+$ nhaac_female &lt;dbl&gt; 398, 28, 39, 36, 30, 11, 25, 39, 42, 41, 31, 20, 11, 14, …
+$ nhnac_male   &lt;dbl&gt; 23, 1, 1, 3, 3, 4, 1, 1, 1, 2, 3, 0, 2, 0, 1, 0, 0, 0, 0,…
+$ nhnac_female &lt;dbl&gt; 27, 0, 4, 4, 4, 2, 1, 1, 1, 3, 5, 0, 0, 2, 0, 0, 0, 0, 0,…
+$ h_male       &lt;dbl&gt; 694, 88, 68, 66, 60, 65, 66, 61, 56, 51, 34, 24, 20, 9, 1…
+$ h_female     &lt;dbl&gt; 616, 62, 74, 64, 51, 42, 44, 62, 45, 39, 47, 21, 13, 15, …
+$ hwa_male     &lt;dbl&gt; 586, 74, 61, 45, 48, 60, 54, 55, 49, 45, 25, 21, 17, 9, 9…
+$ hwa_female   &lt;dbl&gt; 517, 56, 61, 50, 42, 33, 39, 53, 35, 34, 40, 16, 12, 12, …
+$ hba_male     &lt;dbl&gt; 47, 6, 1, 10, 7, 2, 5, 3, 2, 2, 3, 2, 2, 0, 2, 0, 0, 0, 0…
+$ hba_female   &lt;dbl&gt; 39, 4, 2, 3, 4, 4, 3, 5, 3, 1, 5, 2, 0, 2, 0, 1, 0, 0, 0,…
+$ hia_male     &lt;dbl&gt; 16, 3, 2, 3, 0, 0, 0, 0, 3, 1, 3, 1, 0, 0, 0, 0, 0, 0, 0,…
+$ hia_female   &lt;dbl&gt; 24, 1, 6, 3, 2, 2, 0, 2, 2, 3, 0, 1, 0, 1, 0, 1, 0, 0, 0,…
+$ haa_male     &lt;dbl&gt; 6, 0, 0, 1, 2, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ haa_female   &lt;dbl&gt; 4, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, …
+$ hna_male     &lt;dbl&gt; 16, 1, 1, 1, 3, 1, 5, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,…
+$ hna_female   &lt;dbl&gt; 9, 0, 0, 1, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ htom_male    &lt;dbl&gt; 23, 4, 3, 6, 0, 2, 0, 1, 1, 2, 2, 0, 1, 0, 1, 0, 0, 0, 0,…
+$ htom_female  &lt;dbl&gt; 23, 1, 5, 7, 2, 1, 0, 1, 2, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0,…
+$ hwac_male    &lt;dbl&gt; 607, 77, 64, 51, 48, 62, 54, 56, 50, 47, 27, 21, 17, 9, 1…
+$ hwac_female  &lt;dbl&gt; 538, 56, 66, 57, 44, 34, 39, 53, 37, 34, 41, 18, 13, 12, …
+$ hbac_male    &lt;dbl&gt; 57, 9, 2, 13, 7, 2, 5, 4, 2, 3, 3, 2, 3, 0, 2, 0, 0, 0, 0…
+$ hbac_female  &lt;dbl&gt; 48, 5, 3, 7, 5, 4, 3, 6, 4, 1, 5, 2, 0, 2, 0, 1, 0, 0, 0,…
+$ hiac_male    &lt;dbl&gt; 26, 4, 2, 5, 0, 2, 0, 0, 4, 2, 5, 1, 0, 0, 1, 0, 0, 0, 0,…
+$ hiac_female  &lt;dbl&gt; 32, 1, 7, 5, 2, 3, 0, 2, 2, 3, 1, 3, 1, 1, 0, 1, 0, 0, 0,…
+$ haac_male    &lt;dbl&gt; 9, 0, 2, 2, 2, 0, 2, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, …
+$ haac_female  &lt;dbl&gt; 11, 0, 3, 1, 1, 1, 0, 1, 2, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0,…
+$ hnac_male    &lt;dbl&gt; 19, 2, 2, 1, 3, 1, 5, 2, 1, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0,…
+$ hnac_female  &lt;dbl&gt; 10, 1, 0, 1, 1, 1, 2, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0,…</code></pre>
+</div>
+</div>
+</section>
+<section id="overview-of-the-raw-data" class="level2">
+<h2 class="anchored" data-anchor-id="overview-of-the-raw-data">Overview of the raw data</h2>
+<p>There are 776321 rows and 80 columns in the downloaded dataframe. The file layout is available <a href="https://www2.census.gov/programs-surveys/popest/technical-documentation/file-layouts/2010-2020/cc-est2020-alldata.pdf">here</a>.</p>
+<p>Here are the columns that we will need to have a dataset with necessary age-categories and subgroups for YPLL calculation.</p>
+<ul>
+<li><p><code>state</code>: state FIPS code</p></li>
+<li><p><code>county</code>: county FIPS code</p></li>
+<li><p><code>year</code>: Year of data</p>
+<p>The key for YEAR is as follows:</p>
+<ul>
+<li><p>1 = 4/1/2010 Census population</p></li>
+<li><p>2 = 4/1/2010 population estimates base</p></li>
+<li><p>3 = 7/1/2010 population estimate</p></li>
+<li><p>4 = 7/1/2011 population estimate</p></li>
+<li><p>5 = 7/1/2012 population estimate</p></li>
+<li><p>6 = 7/1/2013 population estimate</p></li>
+<li><p>7 = 7/1/2014 population estimate</p></li>
+<li><p>8 = 7/1/2015 population estimate</p></li>
+<li><p>9 = 7/1/2016 population estimate</p></li>
+<li><p>10 = 7/1/2017 population estimate</p></li>
+<li><p>11 = 7/1/2018 population estimate</p></li>
+<li><p>12 = 7/1/2019 population estimate</p></li>
+<li><p>13 = 7/1/2020 population estimate</p></li>
+</ul></li>
+</ul>
+<p>We will subset the original data with <code>year == 13</code> to get 2020 population estimate.</p>
+<ul>
+<li><p><code>agegrp</code>: Age group</p>
+<p>0 = Total</p>
+<p>1 = Age 0 to 4 years</p>
+<p>2 = Age 5 to 9 years</p>
+<p>3 = Age 10 to 14 years</p>
+<p>4 = Age 15 to 19 years</p>
+<p>5 = Age 20 to 24 years</p>
+<p>6 = Age 25 to 29 years</p>
+<p>7 = Age 30 to 34 years</p>
+<p>8 = Age 35 to 39 years</p>
+<p>9 = Age 40 to 44 years</p>
+<p>10 = Age 45 to 49 years</p>
+<p>11 = Age 50 to 54 years</p>
+<p>12 = Age 55 to 59 years</p>
+<p>13 = Age 60 to 64 years</p>
+<p>14 = Age 65 to 69 years</p>
+<p>15 = Age 70 to 74 years</p>
+<p>16 = Age 75 to 79 years</p>
+<p>17 = Age 80 to 84 years</p>
+<p>18 = Age 85 years or older</p></li>
+</ul>
+<p>We need <code>agegrp</code> from 1 to 15 to create age categories shown in Table 1. One <strong>challenge</strong> is how we can get infant population (age_cat = 0) from a dataset with 5-year age groups. One way is to approximate the infant population by taking 20% of population in <code>agegrp = 1</code> (age 0 to 4 years), assuming the data has a uniform distribution within this age group. This approach is not ideal, but it may be a realistic option for most counties. A possible better way to have infant population is to use births data for each county, which is out of the scope for this post.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="age_groups.png" class="img-fluid figure-img" style="width:80.0%"></p>
+<figcaption class="figure-caption">Construct age categories for YPLL calculation</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<ul>
+<li>columns for race/ethnicity groups</li>
+</ul>
+<p>Table 3 shows the columns in the raw data that we need to create the subgroups in Table 2.</p>
+<hr>
+<div class="cell">
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<caption>Columns needed to create subgroups</caption>
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">column</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">description</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">subgroup</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">NHWA_MALE</td>
+<td style="text-align: left;">Not Hispanic, White alone male population</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHWA_FEMALE</td>
+<td style="text-align: left;">Not Hispanic, White alone female population</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NHBA_MALE</td>
+<td style="text-align: left;">Not Hispanic, Black or African American alone male population</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHBA_FEMALE</td>
+<td style="text-align: left;">Not Hispanic, Black or African American alone female population</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NHIA_MALE</td>
+<td style="text-align: left;">Not Hispanic, American Indian and Alaska Native alone male population</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHIA_FEMALE</td>
+<td style="text-align: left;">Not Hispanic, American Indian and Alaska Native alone female population</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NHAA_MALE</td>
+<td style="text-align: left;">Not Hispanic, Asian alone male population</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHAA_FEMALE</td>
+<td style="text-align: left;">Not Hispanic, Asian alone female population</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">NHNA_MALE</td>
+<td style="text-align: left;">Not Hispanic, Native Hawaiian and Other Pacific Islander alone male population</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">NHNA_FEMALE</td>
+<td style="text-align: left;">Not Hispanic, Native Hawaiian and Other Pacific Islander alone female population</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">H_MALE</td>
+<td style="text-align: left;">Hispanic male population</td>
+<td style="text-align: right;">8</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">H_FEMALE</td>
+<td style="text-align: left;">Hispanic female population</td>
+<td style="text-align: right;">8</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+</section>
+<section id="get-subgroup-population-by-age-category" class="level1">
+<h1>Get subgroup population by age category</h1>
+<section id="subset-the-raw-data-keep-only-needed-columns" class="level2">
+<h2 class="anchored" data-anchor-id="subset-the-raw-data-keep-only-needed-columns">subset the raw data, keep only needed columns</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>cc_2020_agegrp_sig_r <span class="ot">&lt;-</span> cc_est2020_all <span class="sc">|&gt;</span> </span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="co"># get 2020 data with agegrp from 1 to 15</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="dv">13</span>, agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">15</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="at">statecode =</span> state, <span class="at">countycode =</span> county, agegrp,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"nhwa_"</span>), <span class="co"># Not Hispanic, White alone</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"nhba_"</span>), <span class="co"># Not Hispanic, Black or African American alone</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"nhia_"</span>), <span class="co"># Not Hispanic, American Indian and Alaska Native alone</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"nhaa_"</span>), <span class="co"># Not Hispanic, Asian alone</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"nhna_"</span>), <span class="co"># Not Hispanic, Native Hawaiian and Other Pacific Islander alone</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>         <span class="fu">starts_with</span>(<span class="st">"h_"</span>) <span class="co"># Hispanic</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">|&gt;</span> </span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">white =</span> nhwa_male <span class="sc">+</span> nhwa_female,</span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>         <span class="at">black =</span> nhba_male <span class="sc">+</span> nhba_female,</span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>         <span class="at">aian =</span> nhia_male <span class="sc">+</span> nhia_female,</span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>         <span class="at">asian =</span> nhaa_male <span class="sc">+</span> nhaa_female <span class="sc">+</span> nhna_male <span class="sc">+</span> nhna_female,</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a>         <span class="at">hispanic =</span> h_male <span class="sc">+</span> h_female</span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a>         ) <span class="sc">|&gt;</span> </span>
+<span id="cb3-18"><a href="#cb3-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span><span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">15</span>))</span>
+<span id="cb3-19"><a href="#cb3-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-20"><a href="#cb3-20" aria-hidden="true" tabindex="-1"></a>cc_2020_agegrp_sig_r <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  statecode countycode agegrp white black  aian asian hispanic
+  &lt;chr&gt;     &lt;chr&gt;       &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1 01        001             1  2252   743     6    48      161
+2 01        001             2  2358   752    14    49      161
+3 01        001             3  2580   878    18    34      169
+4 01        001             4  2494   817     8    51      145
+5 01        001             5  2179   715     8    42      112</code></pre>
+</div>
+</div>
+</section>
+<section id="county-population-by-age-categories-and-raceethnicity-subgroups" class="level2">
+<h2 class="anchored" data-anchor-id="county-population-by-age-categories-and-raceethnicity-subgroups">County population by age categories and race/ethnicity subgroups</h2>
+<section id="age_cat-2-7" class="level3">
+<h3 class="anchored" data-anchor-id="age_cat-2-7">age_cat = 2-7</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 15-74: age cat 2-7</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_2_7 <span class="ot">&lt;-</span> cc_2020_agegrp_sig_r <span class="sc">|&gt;</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">15</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age_cat =</span> <span class="fu">case_when</span>(</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">5</span>) <span class="sc">~</span> <span class="dv">2</span>, <span class="co"># 15-19, 19-24</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">6</span>, <span class="dv">7</span>) <span class="sc">~</span> <span class="dv">3</span>, <span class="co"># 25-29, 30-34</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">9</span>) <span class="sc">~</span> <span class="dv">4</span>, <span class="co"># 35-39, 40-44</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">11</span>) <span class="sc">~</span> <span class="dv">5</span>, <span class="co"># 45-49, 50-54</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">12</span>, <span class="dv">13</span>) <span class="sc">~</span> <span class="dv">6</span>, <span class="co"># 55-59, 60-64</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">14</span>, <span class="dv">15</span>) <span class="sc">~</span> <span class="dv">7</span>, <span class="co"># 65-69, 70-74</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>  )) <span class="sc">|&gt;</span> </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>agegrp) <span class="sc">|&gt;</span> </span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(statecode, countycode, age_cat) <span class="sc">|&gt;</span> </span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">c</span>(white, black, aian, asian, hispanic), <span class="sc">~</span><span class="fu">sum</span>(., <span class="at">na.rm =</span> <span class="cn">TRUE</span>)), <span class="at">.groups =</span> <span class="st">"drop"</span>)</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_2_7 <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  statecode countycode age_cat white black  aian asian hispanic
+  &lt;chr&gt;     &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1 01        001              2  4673  1532    16    93      257
+2 01        001              3  5294  1684    27    80      274
+3 01        001              4  5168  1654    23   134      304
+4 01        001              5  5547  1497    34   109      187
+5 01        001              6  5756  1335    44    61      119</code></pre>
+</div>
+</div>
+</section>
+<section id="age_cat-0-infant-population" class="level3">
+<h3 class="anchored" data-anchor-id="age_cat-0-infant-population">age_cat = 0: infant population</h3>
+<p>Take 1/5 of population in agegrp = 1</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># age_cat = 0, infants</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0 <span class="ot">&lt;-</span> cc_2020_agegrp_sig_r <span class="sc">|&gt;</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age_cat =</span> <span class="dv">0</span>, <span class="at">.after =</span> <span class="dv">3</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(<span class="sc">-</span>agegrp) <span class="sc">|&gt;</span> </span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>), <span class="sc">~</span> .x<span class="sc">/</span><span class="dv">5</span>))</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0 <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  statecode countycode age_cat  white black  aian asian hispanic
+  &lt;chr&gt;     &lt;chr&gt;        &lt;dbl&gt;  &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1 01        001              0  450.  149.    1.2   9.6     32.2
+2 01        003              0 1787.  251    11    30.4    209. 
+3 01        005              0   85.2 140     1     0.4     27  
+4 01        007              0  175.   44.8   0.6   0       13  
+5 01        009              0  543.   10.2   2     6.4    105. </code></pre>
+</div>
+</div>
+</section>
+<section id="age_cat-1-1-14-year" class="level3">
+<h3 class="anchored" data-anchor-id="age_cat-1-1-14-year">age_cat = 1: 1-14 year</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># age_cat = 1: 1-14</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_1 <span class="ot">&lt;-</span> cc_2020_agegrp_sig_r <span class="sc">|&gt;</span> </span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(agegrp <span class="sc">%in%</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">3</span>)) <span class="sc">|&gt;</span> </span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>), <span class="sc">~</span><span class="fu">if_else</span>(agegrp<span class="sc">==</span><span class="dv">1</span>, . <span class="sc">*</span> <span class="dv">4</span><span class="sc">/</span><span class="dv">5</span>, .))) <span class="sc">|&gt;</span>   </span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(statecode, countycode) <span class="sc">|&gt;</span> </span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="fu">across</span>(<span class="fu">c</span>(<span class="dv">2</span><span class="sc">:</span><span class="dv">6</span>), <span class="sc">~</span> <span class="fu">sum</span>(., <span class="at">na.rm =</span> <span class="cn">TRUE</span>)), <span class="at">.groups =</span> <span class="st">"drop"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ungroup</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">age_cat =</span> <span class="dv">1</span>, <span class="at">.after =</span> <span class="dv">3</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_1 <span class="sc">|&gt;</span> <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  statecode countycode  white age_cat black  aian asian hispanic
+  &lt;chr&gt;     &lt;chr&gt;       &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1 01        001         6740.       1 2224.  36.8 121.      459.
+2 01        003        28270.       1 3746  195   491.     2965.
+3 01        005         1310.       1 2033    7    24.6     405 
+4 01        007         2476.       1  626.  12.4   4       157 
+5 01        009         8031.       1  166.  24    56.6    1615.</code></pre>
+</div>
+</div>
+</section>
+<section id="all-age-categories" class="level3">
+<h3 class="anchored" data-anchor-id="all-age-categories">all age categories</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0_7 <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  cc_2020_sg_r_agecat_0,</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  cc_2020_sg_r_agecat_1,</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  cc_2020_sg_r_agecat_2_7) <span class="sc">|&gt;</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(statecode, countycode, age_cat) <span class="sc">|&gt;</span>  </span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># round numbers</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="fu">across</span>(<span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>), <span class="sc">~</span><span class="fu">round</span>(.)))</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0_7 <span class="sc">|&gt;</span> </span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  statecode countycode age_cat white black  aian asian hispanic
+  &lt;chr&gt;     &lt;chr&gt;        &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;    &lt;dbl&gt;
+1 01        001              0   450   149     1    10       32
+2 01        001              1  6740  2224    37   121      459
+3 01        001              2  4673  1532    16    93      257
+4 01        001              3  5294  1684    27    80      274
+5 01        001              4  5168  1654    23   134      304</code></pre>
+</div>
+</div>
+</section>
+<section id="pivot-tabel-longer-so-that-we-have-one-column-of-subgroup-codes-and-one-column-for-population" class="level3">
+<h3 class="anchored" data-anchor-id="pivot-tabel-longer-so-that-we-have-one-column-of-subgroup-codes-and-one-column-for-population">Pivot tabel longer so that we have one column of subgroup codes and one column for population</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0_7_long <span class="ot">&lt;-</span> cc_2020_sg_r_agecat_0_7 <span class="sc">|&gt;</span> </span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(<span class="at">cols =</span> <span class="fu">c</span>(<span class="dv">4</span><span class="sc">:</span><span class="dv">8</span>), <span class="at">names_to =</span> <span class="st">"race"</span>, <span class="at">values_to =</span> <span class="st">"pop"</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">race =</span> <span class="fu">case_when</span>(</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    race <span class="sc">==</span> <span class="st">"white"</span> <span class="sc">~</span> <span class="dv">1</span>,</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>    race <span class="sc">==</span> <span class="st">"black"</span> <span class="sc">~</span> <span class="dv">2</span>,</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>    race <span class="sc">==</span> <span class="st">"aian"</span> <span class="sc">~</span> <span class="dv">3</span>,</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>    race <span class="sc">==</span> <span class="st">"asian"</span> <span class="sc">~</span> <span class="dv">4</span>,</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>    race <span class="sc">==</span> <span class="st">"hispanic"</span> <span class="sc">~</span> <span class="dv">8</span>,</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>    <span class="cn">TRUE</span> <span class="sc">~</span> <span class="cn">NA_real_</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Let’s take a look at the top 20 rows.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># top 20 rows</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>cc_2020_sg_r_agecat_0_7_long <span class="sc">|&gt;</span> </span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">head</span>(<span class="dv">50</span>) <span class="sc">|&gt;</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print_kbl</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="table table-striped table-hover table-sm small" data-quarto-postprocess="true">
+<thead>
+<tr class="header">
+<th style="text-align: left;" data-quarto-table-cell-role="th">statecode</th>
+<th style="text-align: left;" data-quarto-table-cell-role="th">countycode</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">age_cat</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">race</th>
+<th style="text-align: right;" data-quarto-table-cell-role="th">pop</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">450</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">149</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">10</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">6740</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2224</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">37</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">121</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">459</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4673</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1532</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">16</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">93</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">257</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5294</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1684</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">274</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5168</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1654</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">134</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">304</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5547</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1497</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">34</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">109</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">187</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">5756</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">1335</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4181</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">865</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">38</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">001</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">59</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1787</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">251</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">11</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">209</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">28270</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3746</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">195</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">491</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">01</td>
+<td style="text-align: left;">003</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">2965</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="summary" class="level1">
+<h1>Summary</h1>
+<p>This post shows the feasibility to create a dataset of county-level population estimates by age categories and subgroups, which might be useful for YPLL calcuations.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
