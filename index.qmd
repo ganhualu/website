@@ -20,7 +20,7 @@ about:
 
 Hello! My name is Ganhua Lu, and I am a Data Scientist enthusiastic about data analytics, machine learning, AI, and creating impactful data visualizations.
 
-I am currently a Data Scientist on the Data & Analytics Team for the [County Health Rankings & Roadmaps](https://www.countyhealthrankings.org/) at [University of Wisconsin Population Health Institute](https://uwphi.pophealth.wisc.edu).
+I am currently a Data Scientist for the [Wisconsin Health Data Hub (WHDH) Program](https://whdh.med.wisc.edu/) at [University of Wisconsin School of Medicine and Public Health](https://www.med.wisc.edu/).
 
 I have an M.S. in Data Science from [Marquette University](https://www.marquette.edu/) and Ph.D. in Mechanical Engineering from the [University of Wisconsin-Milwaukee](https://uwm.edu/). 
 
